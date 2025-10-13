@@ -38,6 +38,12 @@
 
 @theme {
     --color-*: initial;
+    --color-blue-300: hsl(209, 23%, 82%); /* (dark mode elements) */
+    --color-blue-400: hsl(209, 23%, 72%); /* (dark mode elements) */
+    --color-blue-500: hsl(209, 23%, 62%); /* (dark mode elements) */
+    --color-blue-600: hsl(209, 23%, 52%); /* (dark mode elements) */
+    --color-blue-700: hsl(209, 23%, 42%); /* (dark mode elements) */
+    --color-blue-800: hsl(209, 23%, 32%); /* (dark mode elements) */
     --color-blue-900: hsl(209, 23%, 22%); /* (dark mode elements) */
     --color-blue-950: hsl(207, 26%, 17%); /* (dark mode background) */
 
