@@ -1,5 +1,9 @@
-import "./App.css";
+import { Header } from "./components/Header";
 
 export const App = () => {
-  return <></>;
+  return (
+    <div className="min-h-screen bg-gray-50 dark:bg-blue-950">
+      <Header />
+    </div>
+  );
 };
