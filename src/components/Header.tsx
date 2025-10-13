@@ -1,11 +1,10 @@
 import { useEffect, useState } from "react";
 import { Container } from "../layouts/Container";
 
-const USER_SAVED_THEME_KEY = "user-pref-theme";
-const HTML_THEME_KEY = "data-theme";
-
 export const Header = () => {
-  console.log(localStorage.getItem(USER_SAVED_THEME_KEY));
+  const USER_SAVED_THEME_KEY = "user-pref-theme";
+  const HTML_THEME_KEY = "data-theme";
+
   const [theme, setTheme] = useState(localStorage.getItem(USER_SAVED_THEME_KEY) || "light");
 
   const saveTheme = () => {
