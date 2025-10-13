@@ -7,6 +7,9 @@ interface ComboboxProps {
   data: string[];
   defaultValue: string;
   onValueChange: (value: string) => void;
+  prefix?: string;
+  label: string;
+  placeholder?: string;
 }
 
 export const Combobox = (props: ComboboxProps) => {
@@ -21,13 +24,13 @@ export const Combobox = (props: ComboboxProps) => {
   const handleOpenChange = (value: boolean) => {
     setOpen(value);
   };
+
   return (
     <Select.Root onValueChange={handleValueChange} onOpenChange={handleOpenChange} value={value}>
-      <Select.Trigger
-        className="font-semi-bold flex h-12 w-full items-center justify-between rounded-sm px-4 text-start text-lg text-gray-950 ring ring-gray-200 dark:text-white dark:ring-blue-700"
-        aria-label="Food"
-      >
-        <Select.Value>{value === props.defaultValue ? "Filter by region..." : "Region: " + value}</Select.Value>
+      <Select.Trigger className="font-semi-bold flex h-12 w-full items-center justify-between rounded-sm px-4 text-start text-lg text-gray-950 ring ring-gray-200 transition-[box-shadow] hover:ring-gray-950 dark:text-white dark:ring-blue-700 hover:dark:ring-white">
+        <Select.Value>
+          {value === props.defaultValue ? props.placeholder || props.label : props.prefix + value}
+        </Select.Value>
         <Select.Icon>
           <ChevronDownIcon className={cn("transition-transform", open && "rotate-180")} />
         </Select.Icon>
