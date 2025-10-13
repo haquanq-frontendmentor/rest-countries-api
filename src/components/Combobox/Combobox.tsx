@@ -1,7 +1,7 @@
 import ChevronDownIcon from "@/assets/images/chevron-down.svg?react";
 import { cn } from "@/utils/cn";
 import { Select } from "radix-ui";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Button } from "../common/Button";
 
 interface ComboboxProps {
@@ -27,12 +27,22 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
     setOpen(value);
   };
 
+  const [width, setWidth] = useState(0);
+
+  const triggerRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (triggerRef.current) {
+      setWidth(triggerRef.current.clientWidth);
+    }
+  }, []);
+
   return (
     <Select.Root onValueChange={handleValueChange} onOpenChange={handleOpenChange} value={value}>
-      <Select.Trigger className="w-full rounded-sm">
-        <Button asWrapper="div" size={size} className="justify-between">
+      <Select.Trigger className="w-full rounded-sm" ref={triggerRef}>
+        <Button asWrapper="div" size={size} className="justify-between gap-4">
           <Select.Value>
-            {value === props.defaultValue ? props.placeholder || props.label : props.prefix + value}
+            {value === props.defaultValue ? props.placeholder || props.label : (props.prefix || "") + value}
           </Select.Value>
           <Select.Icon>
             <ChevronDownIcon className={cn("transition-transform", open && "rotate-180")} />
@@ -40,8 +50,11 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
         </Button>
       </Select.Trigger>
       <Select.Portal>
-        <Select.Content className="z-50 overflow-hidden rounded-sm bg-white shadow-2xl" position="popper">
-          <Select.ScrollUpButton />
+        <Select.Content
+          className="z-50 my-2 overflow-hidden rounded-md shadow-2xl"
+          position="popper"
+          style={{ width: width + "px" }}
+        >
           <Select.Viewport className="overflow-auto">
             {props.data.map((value) => (
               <SelectItem size={size} value={value} key={value}>
@@ -49,7 +62,6 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
               </SelectItem>
             ))}
           </Select.Viewport>
-          <Select.ScrollDownButton />
         </Select.Content>
       </Select.Portal>
     </Select.Root>
