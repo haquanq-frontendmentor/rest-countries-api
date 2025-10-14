@@ -3218,7 +3218,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/Seal_of_the_Northern_Mariana_Islands.svg/500px-Seal_of_the_Northern_Mariana_Islands.svg.png",
         },
         cioc: "",
         independent: false,
@@ -33926,7 +33926,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/5/58/Coat_of_arms_of_Norfolk_Island.svg/640px-Coat_of_arms_of_Norfolk_Island.svg.png",
         },
         cioc: "",
         independent: false,
