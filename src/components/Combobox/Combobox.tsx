@@ -51,7 +51,7 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
       </Select.Trigger>
       <Select.Portal>
         <Select.Content
-          className="z-50 my-2 overflow-hidden rounded-md shadow-2xl"
+          className="z-50 my-2 overflow-hidden rounded-md p-1 shadow-2xl"
           position="popper"
           style={{ width: width + "px" }}
         >
@@ -75,7 +75,7 @@ interface ComboboxItemProps extends Select.SelectItemProps {
 const SelectItem = ({ children, size, ...props }: ComboboxItemProps) => {
   return (
     <Select.Item
-      className="cursor-pointer bg-white outline-none hover:bg-gray-100 focus-visible:bg-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 dark:focus-visible:bg-blue-800"
+      className="cursor-pointer rounded-md bg-white outline-none hover:bg-gray-100 focus-visible:bg-gray-100 dark:bg-blue-900 dark:hover:bg-blue-800 dark:focus-visible:bg-blue-800"
       {...props}
     >
       <Button asWrapper="div" size={size} className="justify-between ring-0">
