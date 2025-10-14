@@ -35,7 +35,9 @@ export const CountryDetail = () => {
   const continents = country.continents.join(", ");
 
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    requestAnimationFrame(() => {
+      window.scrollTo({ top: 0, behavior: "instant" });
+    });
   }, [country]);
 
   return (
