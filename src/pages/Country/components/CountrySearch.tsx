@@ -23,7 +23,7 @@ export const CountrySearch = () => {
         onChange={(e) => search.setCountryName(e.target.value)}
         placeholder="Search for a country..."
       />
-      <Button className="absolute right-0 px-4 ring-0" type="submit" size="large">
+      <Button className="absolute right-0 px-4 ring-0" type="submit" size="large" aria-label="Submit">
         <SearchIcon />
       </Button>
     </form>
