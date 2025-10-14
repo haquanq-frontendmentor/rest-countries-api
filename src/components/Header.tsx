@@ -7,7 +7,11 @@ export const Header = () => {
   const USER_SAVED_THEME_KEY = "user-pref-theme";
   const HTML_THEME_KEY = "data-theme";
 
-  const [theme, setTheme] = useState(localStorage.getItem(USER_SAVED_THEME_KEY) || "light");
+  const isUserPreferDarkMode = () => window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+
+  const [theme, setTheme] = useState(
+    localStorage.getItem(USER_SAVED_THEME_KEY) || (isUserPreferDarkMode() ? "dark" : "light"),
+  );
 
   const saveTheme = () => {
     localStorage.setItem(USER_SAVED_THEME_KEY, theme);
