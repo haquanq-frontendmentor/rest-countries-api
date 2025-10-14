@@ -6,44 +6,46 @@ import { Button } from "../common/Button";
 
 interface ComboboxProps {
   data: string[];
-  defaultValue: string;
+  value: string;
   onValueChange: (value: string) => void;
-  prefix?: string;
   label: string;
   placeholder?: string;
   size?: "small" | "normal" | "large";
 }
 
-export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
-  const [value, setValue] = useState(props.defaultValue);
+export const Combobox = ({ size = "normal", onValueChange, value, placeholder, label, data }: ComboboxProps) => {
   const [open, setOpen] = useState(false);
 
   const handleValueChange = (value: string) => {
-    props.onValueChange(value);
-    setValue(value);
+    onValueChange(value);
   };
 
   const handleOpenChange = (value: boolean) => {
     setOpen(value);
   };
 
-  const [width, setWidth] = useState(0);
-
+  const contentWidth = useRef<number>(0);
   const triggerRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
-    if (triggerRef.current) {
-      setWidth(triggerRef.current.clientWidth);
-    }
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        if (entry.target.isEqualNode(triggerRef.current)) {
+          contentWidth.current = entry.target.clientWidth;
+        }
+      }
+    });
+
+    if (triggerRef.current === null) return;
+    resizeObserver.observe(triggerRef.current);
+    contentWidth.current = triggerRef.current.clientWidth;
   }, []);
 
   return (
-    <Select.Root onValueChange={handleValueChange} onOpenChange={handleOpenChange} value={value}>
-      <Select.Trigger className="w-full rounded-sm" ref={triggerRef}>
-        <Button asWrapper="div" size={size} className="justify-between gap-4">
-          <Select.Value>
-            {value === props.defaultValue ? props.placeholder || props.label : (props.prefix || "") + value}
-          </Select.Value>
+    <Select.Root value={value} onValueChange={handleValueChange} open={open} onOpenChange={handleOpenChange}>
+      <Select.Trigger className="w-full rounded-sm" ref={triggerRef} aria-label={label}>
+        <Button asWrapper="span" size={size} className="justify-between gap-4">
+          <Select.Value placeholder={placeholder || label} />
           <Select.Icon>
             <ChevronDownIcon className={cn("transition-transform", open && "rotate-180")} />
           </Select.Icon>
@@ -53,10 +55,10 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
         <Select.Content
           className="z-50 my-2 overflow-hidden rounded-md bg-white p-1 shadow-xl dark:bg-blue-900"
           position="popper"
-          style={{ width: width + "px" }}
+          style={{ width: contentWidth.current + "px" }}
         >
           <Select.Viewport className="overflow-auto">
-            {props.data.map((value) => (
+            {data.map((value) => (
               <SelectItem size={size} value={value} key={value}>
                 {value}
               </SelectItem>

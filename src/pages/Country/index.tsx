@@ -34,10 +34,9 @@ export const Country = () => {
           </div>
           <div className="w-full sm:w-64">
             <Combobox
-              defaultValue="All"
+              value={filter.region}
               label="Filter regions"
               placeholder="Filter by region..."
-              prefix="Region: "
               data={REGION_OPTIONS}
               size="large"
               onValueChange={handleRegionFilterChange}
