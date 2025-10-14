@@ -84,6 +84,7 @@
         @apply cursor-pointer;
     }
 
+    input:focus-visible,
     a:focus-visible,
     button:focus-visible {
         @apply outline-2 outline-offset-2 outline-gray-950 outline-dashed md:outline-[3px] md:outline-offset-[3px] dark:outline-gray-50;
