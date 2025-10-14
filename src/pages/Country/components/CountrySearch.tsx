@@ -1,16 +1,12 @@
 import SearchIcon from "@/assets/images/search.svg?react";
 import { Button } from "@/components/common/Button";
+import { useCountryStore } from "@/stores/countryStore";
 
-interface CountrySearchProps {
-  onSubmit: (value: string) => void;
-}
+export const CountrySearch = () => {
+  const search = useCountryStore((state) => state.search);
 
-export const CountrySearch = (props: CountrySearchProps) => {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const countryKeys = formData.get("country") as string;
-    props.onSubmit(countryKeys);
   };
 
   return (
@@ -23,6 +19,8 @@ export const CountrySearch = (props: CountrySearchProps) => {
         id="country"
         name="country"
         type="text"
+        value={search.countryName}
+        onChange={(e) => search.setCountryName(e.target.value)}
         placeholder="Search for a country..."
       />
       <Button className="absolute right-0 px-4 ring-0" type="submit" size="large">

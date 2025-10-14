@@ -2,15 +2,16 @@ import ArrowUpRightIcon from "@/assets/images/arrow-up-right.svg?react";
 import { Definition } from "@/components/Definition/Definition";
 import { FlagHolder } from "@/components/FlagHolder";
 import type { Country } from "@/data.type";
+import { useCountryStore } from "@/stores/countryStore";
 import { cn } from "@/utils/cn";
 import { Link } from "react-router";
 
 interface CountryItemProps {
   country: Country;
-  countryNameSearch: string;
 }
 
-export const CountryItem = ({ country, countryNameSearch }: CountryItemProps) => {
+export const CountryItem = ({ country }: CountryItemProps) => {
+  const countryNameSearch = useCountryStore((state) => state.search.countryName);
   const matches = new Set();
 
   [...country.name.common.matchAll(new RegExp(countryNameSearch, "gi"))]

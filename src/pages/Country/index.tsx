@@ -1,47 +1,28 @@
 import { Combobox } from "@/components/Combobox";
 import { Pagination } from "@/components/Pagination";
-import { countries } from "@/data";
 import { Container } from "@/layouts/Container";
-import { useState } from "react";
+import { PAGE_SIZE_OPTIONS, REGION_OPTIONS, useCountryStore } from "@/stores/countryStore";
 import { CountryList } from "./components/CountryList";
 import { CountrySearch } from "./components/CountrySearch";
 
 export const Country = () => {
-  const REGIONS = ["Africa", "America", "Asia", "Europe", "Oceania"];
-  const PAGE_SIZES = [10, 25, 50];
+  const { pagination, filter, getCountries } = useCountryStore();
 
-  const [page, setPage] = useState(1);
-  const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
-  const [region, setRegion] = useState<string>("");
-  const [countryNameSearch, setCountryNameSearch] = useState<string>("");
-
-  const filteredCountries = countries.filter((v) => {
-    const hasRegion = v.region.startsWith(region);
-    const hasCountryNameLike = v.name.common.toLowerCase().indexOf(countryNameSearch.toLowerCase()) != -1;
-    return hasRegion && hasCountryNameLike;
-  });
-
-  const paginatedCountries = filteredCountries.slice((page - 1) * pageSize, pageSize * page);
+  const { countries, filteredCount } = getCountries();
 
   const handlePageChange = (value: number) => {
-    setPage(value);
+    pagination.setPageNumber(value);
   };
 
   const handleRegionFilterChange = (value: string) => {
-    setRegion(value);
-    setPage(1);
+    filter.setRegion(value);
   };
 
   const handlePageSizeChange = (value: number) => {
     scrollTo({ top: 0, behavior: "smooth" });
-    setPageSize(value);
-    setPage(1);
+    pagination.setPageSize(value);
   };
 
-  const handleCountrySearchSubmit = (value: string) => {
-    setCountryNameSearch(value);
-    setPage(1);
-  };
   return (
     <Container>
       <section className="flex flex-col items-center gap-12 pt-12 pb-50 md:gap-16">
@@ -49,7 +30,7 @@ export const Country = () => {
 
         <div className="flex w-full flex-col justify-between gap-6 sm:flex-row">
           <div className="w-full sm:w-100">
-            <CountrySearch onSubmit={handleCountrySearchSubmit} />
+            <CountrySearch />
           </div>
           <div className="w-full sm:w-64">
             <Combobox
@@ -57,7 +38,7 @@ export const Country = () => {
               label="Filter regions"
               placeholder="Filter by region..."
               prefix="Region: "
-              data={REGIONS}
+              data={REGION_OPTIONS}
               size="large"
               onValueChange={handleRegionFilterChange}
             />
@@ -65,15 +46,15 @@ export const Country = () => {
         </div>
 
         <p className="text-base text-gray-950 md:text-lg dark:text-blue-400">
-          Showing {paginatedCountries.length} of {filteredCountries.length} countries
+          Showing {countries.length} of {filteredCount} countries
         </p>
 
-        <CountryList countries={paginatedCountries} countryNameSearch={countryNameSearch} />
+        <CountryList />
         <Pagination
-          totalItems={filteredCountries.length}
+          totalItems={getCountries().filteredCount}
           onPageChange={handlePageChange}
           onPageSizeChange={handlePageSizeChange}
-          pageSizes={PAGE_SIZES}
+          pageSizes={PAGE_SIZE_OPTIONS}
         />
       </section>
     </Container>
