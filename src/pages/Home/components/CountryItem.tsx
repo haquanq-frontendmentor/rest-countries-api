@@ -1,16 +1,16 @@
 import ArrowUpRightIcon from "@/assets/images/arrow-up-right.svg?react";
+import { Definition } from "@/components/Definition/Definition";
+import { FlagHolder } from "@/components/FlagHolder";
 import type { Country } from "@/data.type";
 import { cn } from "@/utils/cn";
-import { createElement } from "react";
+import { Link } from "react-router";
 
 interface CountryItemProps {
   country: Country;
   countryNameSearch: string;
 }
-export const CountryItem = ({ country, countryNameSearch }: CountryItemProps) => {
-  const Flag = (props: React.ComponentProps<"img">) =>
-    createElement("img", { src: country.flags.svg, alt: country.flags.alt, ...props });
 
+export const CountryItem = ({ country, countryNameSearch }: CountryItemProps) => {
   const matches = new Set();
 
   [...country.name.common.matchAll(new RegExp(countryNameSearch, "gi"))]
@@ -26,9 +26,12 @@ export const CountryItem = ({ country, countryNameSearch }: CountryItemProps) =>
       className="group relative flex flex-col rounded-md bg-white shadow-sm transition-[scale,box-shadow] duration-300 hover:scale-[1.01] hover:shadow-lg dark:bg-blue-900"
       key={country.name.official}
     >
-      <div className="items-centerr relative flex h-40 justify-center overflow-hidden rounded-[inherit] p-4">
-        <Flag className="relative z-10 transition-[scale] duration-500 group-hover:scale-110" />
-        <Flag className="absolute inset-0 blur-[80px] brightness-75" />
+      <div className="items-centerr relative flex h-40 justify-center overflow-hidden rounded-[inherit]">
+        <FlagHolder
+          className="w-full transition-[scale] duration-500 group-hover:scale-110"
+          src={country.flags.svg}
+          alt={country.flags.alt}
+        />
         <div className="absolute inset-0 z-20 flex scale-150 items-center justify-center rounded-sm opacity-0 transition-opacity duration-[200ms] group-hover:opacity-100">
           <ArrowUpRightIcon className="relative z-50 rounded-sm text-gray-100 ring-2 ring-gray-100" strokeWidth={2} />
           <div className="absolute inset-0 bg-gray-950 opacity-65"></div>
@@ -45,24 +48,24 @@ export const CountryItem = ({ country, countryNameSearch }: CountryItemProps) =>
             </span>
           ))}
         </h3>
-        <div className="grid gap-1 border-t border-gray-300 pt-5 leading-5 dark:border-t-blue-700">
-          <p>
-            <span className="font-semi-bold">Population:&nbsp;</span>
-            <span className="dark:text-gray-100">{country.population.toLocaleString(undefined)}</span>
-          </p>
-          <p>
-            <span className="font-semi-bold">Region:&nbsp;</span>
-            <span className="dark:text-gray-100">{country.region}</span>
-          </p>
-          <p>
-            <span className="font-semi-bold">Capital:&nbsp;</span>
-            <span className="dark:text-gray-100">{country.capital}</span>
-          </p>
+        <div className="border-t border-gray-200 pt-5 dark:border-blue-700">
+          <Definition
+            label={<h4 className="sr-only">Info</h4>}
+            className="gap-1 text-sm leading-5"
+            data={[
+              { name: "Population", description: country.population.toLocaleString() },
+              { name: "Region", description: country.region },
+              { name: "Capital", description: country.capital?.[0] || "" },
+            ]}
+          />
         </div>
       </div>
-      <a className="absolute inset-0 z-50 cursor-pointer rounded-[inherit]" href="">
-        <span className="sr-only">Read more</span>
-      </a>
+      <Link
+        className="absolute inset-0 z-50 cursor-pointer rounded-[inherit]"
+        to={`/${country.name.common.toLowerCase().replaceAll(" ", "-")}`}
+      >
+        <span className="sr-only">More about {country.name.common}</span>
+      </Link>
     </li>
   );
 };
