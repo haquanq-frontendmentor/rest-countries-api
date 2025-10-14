@@ -15,7 +15,7 @@ export const CountrySearch = () => {
         Search by country
       </label>
       <input
-        className="font-semi-bold h-12 grow rounded-md pr-14 pl-4 text-gray-950 ring ring-gray-200 transition-colors placeholder:text-gray-400 hover:ring-gray-950 dark:text-white dark:ring-blue-700 dark:placeholder:text-white dark:hover:ring-white"
+        className="font-semi-bold h-12 grow rounded-md pr-14 pl-6 text-gray-950 ring ring-gray-200 transition-colors placeholder:text-gray-400 hover:ring-gray-950 dark:text-white dark:ring-blue-700 dark:placeholder:text-white dark:hover:ring-white"
         id="country"
         name="country"
         type="text"
