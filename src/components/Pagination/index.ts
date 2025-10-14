@@ -13,3 +13,5 @@ type PaginationContextData = {
 const PaginationContext = createContext<PaginationContextData | null>(null);
 
 export { PaginationContext, type PaginationContextData };
+
+export { Pagination } from "./Pagination";
