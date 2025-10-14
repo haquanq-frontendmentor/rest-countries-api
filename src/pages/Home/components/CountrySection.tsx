@@ -12,11 +12,11 @@ export const CountrySection = () => {
 
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(PAGE_SIZES[0]);
-  const [region, setRegion] = useState<null | string>(null);
+  const [region, setRegion] = useState<string>("");
   const [countryNameSearch, setCountryNameSearch] = useState<string>("");
 
   const filteredCountries = countries.filter((v) => {
-    const hasRegion = (region != null && v.region.startsWith(region)) || true;
+    const hasRegion = v.region.startsWith(region);
     const hasCountryNameLike = v.name.common.toLowerCase().indexOf(countryNameSearch.toLowerCase()) != -1;
     return hasRegion && hasCountryNameLike;
   });
