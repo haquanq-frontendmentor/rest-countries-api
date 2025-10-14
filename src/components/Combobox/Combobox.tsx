@@ -44,7 +44,7 @@ export const Combobox = ({ size = "normal", onValueChange, value, placeholder, l
   return (
     <Select.Root value={value} onValueChange={handleValueChange} open={open} onOpenChange={handleOpenChange}>
       <Select.Trigger className="w-full rounded-sm" ref={triggerRef} aria-label={label}>
-        <Button asWrapper="span" size={size} className="justify-between gap-4">
+        <Button asWrapper="span" size={size} className="justify-between gap-4 pr-4">
           <Select.Value placeholder={placeholder || label} />
           <Select.Icon>
             <ChevronDownIcon className={cn("transition-transform", open && "rotate-180")} />
