@@ -7,6 +7,7 @@ import { Header } from "@/components/Header";
 import { countries } from "@/data";
 import type { Country } from "@/data.type";
 import { Container } from "@/layouts/Container";
+import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 
 export const CountryDetail = () => {
@@ -32,6 +33,10 @@ export const CountryDetail = () => {
       .join(", ");
 
   const continents = country.continents.join(", ");
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, [country]);
 
   return (
     <>
