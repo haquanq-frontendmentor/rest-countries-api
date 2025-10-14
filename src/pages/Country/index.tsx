@@ -1,5 +1,4 @@
 import { Combobox } from "@/components/Combobox";
-import { Header } from "@/components/Header";
 import { Pagination } from "@/components/Pagination";
 import { countries } from "@/data";
 import { Container } from "@/layouts/Container";
@@ -44,44 +43,39 @@ export const Country = () => {
     setPage(1);
   };
   return (
-    <>
-      <Header title="Where in the world" />
-      <main>
-        <Container>
-          <section className="flex flex-col items-center gap-12 pt-12 pb-50 md:gap-16">
-            <h2 className="sr-only">Countries</h2>
+    <Container>
+      <section className="flex flex-col items-center gap-12 pt-12 pb-50 md:gap-16">
+        <h2 className="sr-only">Countries</h2>
 
-            <div className="flex w-full flex-col justify-between gap-6 sm:flex-row">
-              <div className="w-full sm:w-100">
-                <CountrySearch onSubmit={handleCountrySearchSubmit} />
-              </div>
-              <div className="w-full sm:w-64">
-                <Combobox
-                  defaultValue="All"
-                  label="Filter regions"
-                  placeholder="Filter by region..."
-                  prefix="Region: "
-                  data={REGIONS}
-                  size="large"
-                  onValueChange={handleRegionFilterChange}
-                />
-              </div>
-            </div>
-
-            <p className="text-base text-gray-950 md:text-lg dark:text-blue-400">
-              Showing {paginatedCountries.length} of {filteredCountries.length} countries
-            </p>
-
-            <CountryList countries={paginatedCountries} countryNameSearch={countryNameSearch} />
-            <Pagination
-              totalItems={filteredCountries.length}
-              onPageChange={handlePageChange}
-              onPageSizeChange={handlePageSizeChange}
-              pageSizes={PAGE_SIZES}
+        <div className="flex w-full flex-col justify-between gap-6 sm:flex-row">
+          <div className="w-full sm:w-100">
+            <CountrySearch onSubmit={handleCountrySearchSubmit} />
+          </div>
+          <div className="w-full sm:w-64">
+            <Combobox
+              defaultValue="All"
+              label="Filter regions"
+              placeholder="Filter by region..."
+              prefix="Region: "
+              data={REGIONS}
+              size="large"
+              onValueChange={handleRegionFilterChange}
             />
-          </section>
-        </Container>
-      </main>
-    </>
+          </div>
+        </div>
+
+        <p className="text-base text-gray-950 md:text-lg dark:text-blue-400">
+          Showing {paginatedCountries.length} of {filteredCountries.length} countries
+        </p>
+
+        <CountryList countries={paginatedCountries} countryNameSearch={countryNameSearch} />
+        <Pagination
+          totalItems={filteredCountries.length}
+          onPageChange={handlePageChange}
+          onPageSizeChange={handlePageSizeChange}
+          pageSizes={PAGE_SIZES}
+        />
+      </section>
+    </Container>
   );
 };
