@@ -3,7 +3,11 @@ import SunIcon from "@/assets/images/sun.svg?react";
 import { useEffect, useState } from "react";
 import { Container } from "../layouts/Container";
 
-export const Header = () => {
+interface HeaderProps {
+  title: string;
+}
+
+export const Header = (props: HeaderProps) => {
   const USER_SAVED_THEME_KEY = "user-pref-theme";
   const HTML_THEME_KEY = "data-theme";
 
@@ -26,7 +30,7 @@ export const Header = () => {
     <header className="bg-white text-gray-950 shadow-sm dark:bg-blue-900 dark:text-white">
       <Container>
         <div className="flex items-center justify-between py-6">
-          <h1 className="font-extra-bold text-2xl leading-8">Where in the world?</h1>
+          <h1 className="font-extra-bold text-2xl leading-8">{props.title}</h1>
           <button
             className="flex aspect-square w-8 items-center justify-center rounded-sm transition-[scale,color] active:scale-95"
             type="button"

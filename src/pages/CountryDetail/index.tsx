@@ -35,7 +35,7 @@ export const CountryDetail = () => {
 
   return (
     <>
-      <Header />
+      <Header title={country.name.common} />
       <main>
         <Container>
           <div className="flex flex-col gap-25 pt-10 pb-25">

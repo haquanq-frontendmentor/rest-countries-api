@@ -5,7 +5,7 @@ import { CountrySection } from "./components/CountrySection";
 export const Home = () => {
   return (
     <>
-      <Header />
+      <Header title="Where in the world" />
       <main>
         <Container>
           <CountrySection />
