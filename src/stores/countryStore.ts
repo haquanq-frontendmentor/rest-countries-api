@@ -6,6 +6,23 @@ const REGION_OPTIONS = ["Africa", "Americas", "Asia", "Europe", "Oceania"];
 const PAGE_SIZE_OPTIONS = [10, 25, 50];
 const FIRST_PAGE = 1;
 
+const countryCodeToSlug: Record<string, string> = {};
+const countrySlugToCode: Record<string, string> = {};
+
+countries.forEach((c) => {
+    const slug = c.name.common.toLowerCase().replaceAll(" ", "-");
+    countryCodeToSlug[c.cca3] = slug;
+    countrySlugToCode[slug] = c.cca3;
+});
+
+const getCountryCodeBySlug = (slug: string) => {
+    return countrySlugToCode[slug];
+};
+
+const getCountrySlugByCode = (code: string) => {
+    return countryCodeToSlug[code];
+};
+
 interface CountryStoreState {
     countries: Country[];
     getCountries: () => { countries: Country[]; filteredCount: number };
@@ -66,4 +83,4 @@ const useCountryStore = create<CountryStoreState>()((set, get) => ({
     },
 }));
 
-export { PAGE_SIZE_OPTIONS, REGION_OPTIONS, useCountryStore };
+export { getCountryCodeBySlug, getCountrySlugByCode, PAGE_SIZE_OPTIONS, REGION_OPTIONS, useCountryStore };
