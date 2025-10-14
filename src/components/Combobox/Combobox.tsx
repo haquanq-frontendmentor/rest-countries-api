@@ -51,7 +51,7 @@ export const Combobox = ({ size = "normal", ...props }: ComboboxProps) => {
       </Select.Trigger>
       <Select.Portal>
         <Select.Content
-          className="z-50 my-2 overflow-hidden rounded-md p-1 shadow-2xl"
+          className="z-50 my-2 overflow-hidden rounded-md bg-white p-1 shadow-xl dark:bg-blue-900"
           position="popper"
           style={{ width: width + "px" }}
         >
