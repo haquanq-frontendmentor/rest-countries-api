@@ -9,7 +9,7 @@ export const App = () => {
       <Route
         element={
           <div className="min-h-screen bg-gray-50 dark:bg-blue-950">
-            <Header title="Where in the world?" />
+            <Header />
             <main>
               <Outlet />
             </main>
