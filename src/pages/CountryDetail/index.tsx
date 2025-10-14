@@ -6,6 +6,7 @@ import { FlagHolder } from "@/components/FlagHolder";
 import { countries } from "@/data";
 import type { Country } from "@/data.type";
 import { Container } from "@/layouts/Container";
+import { getCountryCodeBySlug } from "@/stores/countryStore";
 import { useEffect } from "react";
 import { Link, useNavigate, useParams } from "react-router";
 
@@ -14,7 +15,7 @@ export const CountryDetail = () => {
   const navigate = useNavigate();
 
   const country = countries.find(
-    (v) => v.name.common.toLowerCase() == countryNameSlug?.replaceAll("-", " "),
+    (v) => v.cca3 == getCountryCodeBySlug(countryNameSlug as string)?.replaceAll("-", " "),
   ) as Country;
 
   const nativeName =

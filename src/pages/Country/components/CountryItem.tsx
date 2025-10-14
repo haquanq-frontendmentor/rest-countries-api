@@ -2,7 +2,7 @@ import ArrowUpRightIcon from "@/assets/images/arrow-up-right.svg?react";
 import { Definition } from "@/components/Definition/Definition";
 import { FlagHolder } from "@/components/FlagHolder";
 import type { Country } from "@/data.type";
-import { useCountryStore } from "@/stores/countryStore";
+import { getCountrySlugByCode, useCountryStore } from "@/stores/countryStore";
 import { cn } from "@/utils/cn";
 import { Link } from "react-router";
 
@@ -63,7 +63,7 @@ export const CountryItem = ({ country }: CountryItemProps) => {
       </div>
       <Link
         className="absolute inset-0 z-50 cursor-pointer rounded-[inherit]"
-        to={`/${country.name.common.toLowerCase().replaceAll(" ", "-")}`}
+        to={`/${getCountrySlugByCode(country.cca3)}`}
       >
         <span className="sr-only">More about {country.name.common}</span>
       </Link>
