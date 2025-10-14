@@ -61,11 +61,11 @@ const useCountryStore = create<CountryStoreState>()((set, get) => ({
     pagination: {
         pageNumber: FIRST_PAGE,
         setPageNumber: (value) => {
-            set((state) => ({ ...state, currentPage: value }));
+            set((state) => ({ ...state, pagination: { ...state.pagination, pageNumber: value } }));
         },
         pageSize: PAGE_SIZE_OPTIONS[0],
         setPageSize: (value) => {
-            set((state) => ({ ...state, currentPageSize: value }));
+            set((state) => ({ ...state, pagination: { ...state.pagination, pageSize: value } }));
         },
     },
     filter: {
