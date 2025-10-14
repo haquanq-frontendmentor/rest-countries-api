@@ -12,6 +12,7 @@ export const Country = () => {
 
   const handlePageChange = (value: number) => {
     pagination.setPageNumber(value);
+    scrollTo({ top: 0, behavior: "smooth" });
   };
 
   const handleRegionFilterChange = (value: string) => {
@@ -19,7 +20,6 @@ export const Country = () => {
   };
 
   const handlePageSizeChange = (value: number) => {
-    scrollTo({ top: 0, behavior: "smooth" });
     pagination.setPageSize(value);
   };
 
