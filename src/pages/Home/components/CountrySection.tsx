@@ -1,11 +1,12 @@
 import { useState } from "react";
-import { countries } from "../../data";
-import { Combobox } from "../Combobox/Combobox";
-import { Pagination } from "../Pagination/Pagination";
+
+import { Combobox } from "@/components/Combobox";
+import { Pagination } from "@/components/Pagination";
+import { countries } from "@/data";
 import { CountryList } from "./CountryList";
 import { CountrySearch } from "./CountrySearch";
 
-export const Country = () => {
+export const CountrySection = () => {
   const REGIONS = ["Africa", "America", "Asia", "Europe", "Oceania"];
   const PAGE_SIZES = [10, 25, 50];
 

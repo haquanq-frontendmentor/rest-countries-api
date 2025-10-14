@@ -1,7 +1,7 @@
 import ArrowUpRightIcon from "@/assets/images/arrow-up-right.svg?react";
+import type { Country } from "@/data.type";
 import { cn } from "@/utils/cn";
 import { createElement } from "react";
-import type { Country } from "../../data.type";
 
 interface CountryItemProps {
   country: Country;

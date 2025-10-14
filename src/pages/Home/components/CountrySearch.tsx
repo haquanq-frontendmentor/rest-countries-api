@@ -1,5 +1,5 @@
 import SearchIcon from "@/assets/images/search.svg?react";
-import { Button } from "../common/Button";
+import { Button } from "@/components/common/Button";
 
 interface CountrySearchProps {
   onSubmit: (value: string) => void;
