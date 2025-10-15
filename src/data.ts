@@ -73,7 +73,7 @@ export const countries: Country[] = [
         },
         population: 2794700,
         gini: {
-            "2018": 35.7,
+            2018: 35.7,
         },
         tld: [".lt"],
         unMember: true,
@@ -257,7 +257,7 @@ export const countries: Country[] = [
         },
         population: 19116209,
         gini: {
-            "2017": 44.4,
+            2017: 44.4,
         },
         tld: [".cl"],
         unMember: true,
@@ -441,7 +441,7 @@ export const countries: Country[] = [
         },
         population: 12123198,
         gini: {
-            "2015": 47.8,
+            2015: 47.8,
         },
         tld: [".bj"],
         unMember: true,
@@ -807,7 +807,7 @@ export const countries: Country[] = [
         },
         population: 3714000,
         gini: {
-            "2019": 35.9,
+            2019: 35.9,
         },
         tld: [".ge"],
         unMember: true,
@@ -996,7 +996,7 @@ export const countries: Country[] = [
         },
         population: 1207361,
         gini: {
-            "2018": 32.7,
+            2018: 32.7,
         },
         tld: [".cy"],
         unMember: true,
@@ -1180,7 +1180,7 @@ export const countries: Country[] = [
         },
         population: 31072945,
         gini: {
-            "2016": 43.5,
+            2016: 43.5,
         },
         tld: [".gh"],
         unMember: true,
@@ -1384,7 +1384,7 @@ export const countries: Country[] = [
         },
         population: 11555997,
         gini: {
-            "2018": 27.2,
+            2018: 27.2,
         },
         tld: [".be"],
         unMember: true,
@@ -1941,7 +1941,7 @@ export const countries: Country[] = [
         },
         population: 45376763,
         gini: {
-            "2019": 42.9,
+            2019: 42.9,
         },
         tld: [".ar"],
         unMember: true,
@@ -2125,7 +2125,7 @@ export const countries: Country[] = [
         },
         population: 6486201,
         gini: {
-            "2019": 38.8,
+            2019: 38.8,
         },
         tld: [".sv"],
         unMember: true,
@@ -2314,7 +2314,7 @@ export const countries: Country[] = [
         },
         population: 34232050,
         gini: {
-            "2003": 35.3,
+            2003: 35.3,
         },
         tld: [".uz"],
         unMember: true,
@@ -2508,7 +2508,7 @@ export const countries: Country[] = [
         },
         population: 397621,
         gini: {
-            "1999": 53.3,
+            1999: 53.3,
         },
         tld: [".bz"],
         unMember: true,
@@ -2692,7 +2692,7 @@ export const countries: Country[] = [
         },
         population: 1901548,
         gini: {
-            "2018": 35.1,
+            2018: 35.1,
         },
         tld: [".lv"],
         unMember: true,
@@ -2882,7 +2882,7 @@ export const countries: Country[] = [
         },
         population: 26378275,
         gini: {
-            "2015": 41.5,
+            2015: 41.5,
         },
         tld: [".ci"],
         unMember: true,
@@ -3066,7 +3066,7 @@ export const countries: Country[] = [
         },
         population: 67391582,
         gini: {
-            "2018": 32.4,
+            2018: 32.4,
         },
         tld: [".fr"],
         unMember: true,
@@ -3467,7 +3467,7 @@ export const countries: Country[] = [
         },
         population: 5657000,
         gini: {
-            "2011": 48.9,
+            2011: 48.9,
         },
         tld: [".cg"],
         unMember: true,
@@ -3651,7 +3651,7 @@ export const countries: Country[] = [
         },
         population: 164689383,
         gini: {
-            "2016": 32.4,
+            2016: 32.4,
         },
         tld: [".bd"],
         unMember: true,
@@ -4214,7 +4214,7 @@ export const countries: Country[] = [
         },
         population: 114963583,
         gini: {
-            "2015": 35,
+            2015: 35,
         },
         tld: [".et"],
         unMember: true,
@@ -4585,7 +4585,7 @@ export const countries: Country[] = [
         },
         population: 6031187,
         gini: {
-            "1998": 40.8,
+            1998: 40.8,
         },
         tld: [".tm"],
         unMember: true,
@@ -4769,7 +4769,7 @@ export const countries: Country[] = [
         },
         population: 10203140,
         gini: {
-            "2010": 33.7,
+            2010: 33.7,
         },
         tld: [".jo", "الاردن."],
         unMember: true,
@@ -5135,7 +5135,7 @@ export const countries: Country[] = [
         },
         population: 6927288,
         gini: {
-            "2018": 41.3,
+            2018: 41.3,
         },
         tld: [".bg"],
         unMember: true,
@@ -5319,7 +5319,7 @@ export const countries: Country[] = [
         },
         population: 183629,
         gini: {
-            "2016": 51.2,
+            2016: 51.2,
         },
         tld: [".lc"],
         unMember: true,
@@ -5503,7 +5503,7 @@ export const countries: Country[] = [
         },
         population: 16743930,
         gini: {
-            "2011": 40.3,
+            2011: 40.3,
         },
         tld: [".sn"],
         unMember: true,
@@ -5687,7 +5687,7 @@ export const countries: Country[] = [
         },
         population: 3473727,
         gini: {
-            "2019": 39.7,
+            2019: 39.7,
         },
         tld: [".uy"],
         unMember: true,
@@ -5876,7 +5876,7 @@ export const countries: Country[] = [
         },
         population: 1967998,
         gini: {
-            "2010": 50.7,
+            2010: 50.7,
         },
         tld: [".gw"],
         unMember: false,
@@ -6065,7 +6065,7 @@ export const countries: Country[] = [
         },
         population: 109581085,
         gini: {
-            "2018": 42.3,
+            2018: 42.3,
         },
         tld: [".ph"],
         unMember: true,
@@ -6259,7 +6259,7 @@ export const countries: Country[] = [
         },
         population: 59734213,
         gini: {
-            "2017": 40.5,
+            2017: 40.5,
         },
         tld: [".tz"],
         unMember: true,
@@ -6639,7 +6639,7 @@ export const countries: Country[] = [
         },
         population: 43849269,
         gini: {
-            "2014": 34.2,
+            2014: 34.2,
         },
         tld: [".sd"],
         unMember: true,
@@ -6823,7 +6823,7 @@ export const countries: Country[] = [
         },
         population: 7976985,
         gini: {
-            "2018": 35.7,
+            2018: 35.7,
         },
         tld: [".sl"],
         unMember: true,
@@ -7012,7 +7012,7 @@ export const countries: Country[] = [
         },
         population: 16425859,
         gini: {
-            "2011": 43.3,
+            2011: 43.3,
         },
         tld: [".td"],
         unMember: true,
@@ -7206,7 +7206,7 @@ export const countries: Country[] = [
         },
         population: 307150,
         gini: {
-            "2010": 37.6,
+            2010: 37.6,
         },
         tld: [".vu"],
         unMember: true,
@@ -7400,7 +7400,7 @@ export const countries: Country[] = [
         },
         population: 12952209,
         gini: {
-            "2016": 43.7,
+            2016: 43.7,
         },
         tld: [".rw"],
         unMember: true,
@@ -7592,7 +7592,7 @@ export const countries: Country[] = [
         },
         population: 4803269,
         gini: {
-            "2016": 33.7,
+            2016: 33.7,
         },
         tld: [".ps", "فلسطين."],
         unMember: false,
@@ -7776,7 +7776,7 @@ export const countries: Country[] = [
         },
         population: 8278737,
         gini: {
-            "2015": 43.1,
+            2015: 43.1,
         },
         tld: [".tg"],
         unMember: true,
@@ -7960,7 +7960,7 @@ export const countries: Country[] = [
         },
         population: 9890400,
         gini: {
-            "2018": 26,
+            2018: 26,
         },
         tld: [".ae", "امارات."],
         unMember: true,
@@ -8333,7 +8333,7 @@ export const countries: Country[] = [
         },
         population: 869595,
         gini: {
-            "2014": 45.3,
+            2014: 45.3,
         },
         tld: [".km"],
         unMember: true,
@@ -8522,7 +8522,7 @@ export const countries: Country[] = [
         },
         population: 1775378,
         gini: {
-            "2017": 29,
+            2017: 29,
         },
         tld: [],
         unMember: false,
@@ -8702,7 +8702,7 @@ export const countries: Country[] = [
         },
         population: 2617820,
         gini: {
-            "2018": 25.7,
+            2018: 25.7,
         },
         tld: [".md"],
         unMember: true,
@@ -8891,7 +8891,7 @@ export const countries: Country[] = [
         },
         population: 6591600,
         gini: {
-            "2019": 29.7,
+            2019: 29.7,
         },
         tld: [".kg"],
         unMember: true,
@@ -9075,7 +9075,7 @@ export const countries: Country[] = [
         },
         population: 555988,
         gini: {
-            "2015": 42.4,
+            2015: 42.4,
         },
         tld: [".cv"],
         unMember: true,
@@ -9577,7 +9577,7 @@ export const countries: Country[] = [
         },
         population: 329484123,
         gini: {
-            "2018": 41.4,
+            2018: 41.4,
         },
         tld: [".us"],
         unMember: true,
@@ -9778,7 +9778,7 @@ export const countries: Country[] = [
         },
         population: 28435943,
         gini: {
-            "2006": 44.8,
+            2006: 44.8,
         },
         tld: [".ve"],
         unMember: true,
@@ -9915,7 +9915,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Coat_of_arms_of_the_Pitcairn_Islands.svg",
         },
         cioc: "",
         independent: false,
@@ -10097,7 +10097,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Coat_of_Arms_of_Mayotte.svg",
         },
         cioc: "",
         independent: false,
@@ -10287,7 +10287,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/b/bd/Coat_of_arms_of_East_Timor.svg",
         },
         cioc: "TLS",
         independent: true,
@@ -10339,7 +10339,7 @@ export const countries: Country[] = [
         },
         population: 1318442,
         gini: {
-            "2014": 28.7,
+            2014: 28.7,
         },
         tld: [".tl"],
         unMember: true,
@@ -10523,7 +10523,7 @@ export const countries: Country[] = [
         },
         population: 686878,
         gini: {
-            "2012": 37.1,
+            2012: 37.1,
         },
         tld: [".sb"],
         unMember: true,
@@ -10660,7 +10660,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/1/1c/Coat_of_arms_of_Saint_Pierre_and_Miquelon.svg",
         },
         cioc: "",
         independent: false,
@@ -10889,7 +10889,7 @@ export const countries: Country[] = [
         },
         population: 17643060,
         gini: {
-            "2019": 45.7,
+            2019: 45.7,
         },
         tld: [".ec"],
         unMember: true,
@@ -11078,7 +11078,7 @@ export const countries: Country[] = [
         },
         population: 525285,
         gini: {
-            "2018": 28.7,
+            2018: 28.7,
         },
         tld: [".mt"],
         unMember: true,
@@ -11267,7 +11267,7 @@ export const countries: Country[] = [
         },
         population: 4829764,
         gini: {
-            "2008": 56.2,
+            2008: 56.2,
         },
         tld: [".cf"],
         unMember: true,
@@ -11456,7 +11456,7 @@ export const countries: Country[] = [
         },
         population: 105697,
         gini: {
-            "2015": 37.6,
+            2015: 37.6,
         },
         tld: [".to"],
         unMember: true,
@@ -11640,7 +11640,7 @@ export const countries: Country[] = [
         },
         population: 10715549,
         gini: {
-            "2018": 32.9,
+            2018: 32.9,
         },
         tld: [".gr"],
         unMember: true,
@@ -11824,7 +11824,7 @@ export const countries: Country[] = [
         },
         population: 8917205,
         gini: {
-            "2018": 30.8,
+            2018: 30.8,
         },
         tld: [".at"],
         unMember: true,
@@ -12190,7 +12190,7 @@ export const countries: Country[] = [
         },
         population: 206139587,
         gini: {
-            "2018": 35.1,
+            2018: 35.1,
         },
         tld: [".ng"],
         unMember: true,
@@ -12327,7 +12327,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/c/c2/Niue-coat-of-arms-web.png",
         },
         cioc: "",
         independent: false,
@@ -12566,7 +12566,7 @@ export const countries: Country[] = [
         },
         population: 10698896,
         gini: {
-            "2018": 25,
+            2018: 25,
         },
         tld: [".cz"],
         unMember: true,
@@ -13255,7 +13255,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/9/91/Coat_of_arms_of_Wallis_and_Futuna.svg",
         },
         cioc: "",
         independent: false,
@@ -13484,7 +13484,7 @@ export const countries: Country[] = [
         },
         population: 16858333,
         gini: {
-            "2014": 48.3,
+            2014: 48.3,
         },
         tld: [".gt"],
         unMember: true,
@@ -13668,7 +13668,7 @@ export const countries: Country[] = [
         },
         population: 11818618,
         gini: {
-            "2015": 32.8,
+            2015: 32.8,
         },
         tld: [".tn"],
         unMember: true,
@@ -13856,7 +13856,7 @@ export const countries: Country[] = [
         },
         population: 771612,
         gini: {
-            "2017": 37.4,
+            2017: 37.4,
         },
         tld: [".bt"],
         unMember: true,
@@ -14183,7 +14183,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/5/5e/Coat_of_arms_of_Saint_Helena.svg",
         },
         cioc: "",
         independent: false,
@@ -14211,12 +14211,12 @@ export const countries: Country[] = [
         fifa: "",
         continents: ["Africa"],
         name: {
-            common: "Saint Helena, Ascension and Tristan da Cunha",
+            common: "Saint Helena",
             official: "Saint Helena, Ascension and Tristan da Cunha",
             nativeName: {
                 eng: {
                     official: "Saint Helena, Ascension and Tristan da Cunha",
-                    common: "Saint Helena, Ascension and Tristan da Cunha",
+                    common: "Saint Helena",
                 },
             },
         },
@@ -14421,7 +14421,7 @@ export const countries: Country[] = [
         },
         population: 198410,
         gini: {
-            "2013": 38.7,
+            2013: 38.7,
         },
         tld: [".ws"],
         unMember: true,
@@ -14610,7 +14610,7 @@ export const countries: Country[] = [
         },
         population: 9537642,
         gini: {
-            "2015": 34,
+            2015: 34,
         },
         tld: [".tj"],
         unMember: true,
@@ -14747,7 +14747,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/4/40/Coat_of_arms_of_the_Sahrawi_Arab_Democratic_Republic.svg",
         },
         cioc: "",
         independent: false,
@@ -14999,7 +14999,7 @@ export const countries: Country[] = [
         },
         population: 9216900,
         gini: {
-            "2016": 39,
+            2016: 39,
         },
         tld: [".il"],
         unMember: true,
@@ -15190,7 +15190,7 @@ export const countries: Country[] = [
         },
         population: 15893219,
         gini: {
-            "2017": 36.8,
+            2017: 36.8,
         },
         tld: [".so"],
         unMember: true,
@@ -15327,7 +15327,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/3/35/Blason_St_Barth%C3%A9l%C3%A9my_TOM_entire.svg",
         },
         cioc: "",
         independent: false,
@@ -15705,7 +15705,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/f/f6/Coat_of_arms_of_the_Turks_and_Caicos_Islands.svg",
         },
         cioc: "",
         independent: false,
@@ -15939,7 +15939,7 @@ export const countries: Country[] = [
         },
         population: 5530719,
         gini: {
-            "2018": 27.3,
+            2018: 27.3,
         },
         tld: [".fi"],
         unMember: true,
@@ -16132,7 +16132,7 @@ export const countries: Country[] = [
         },
         population: 2142252,
         gini: {
-            "2017": 44.9,
+            2017: 44.9,
         },
         tld: [".ls"],
         unMember: true,
@@ -16316,7 +16316,7 @@ export const countries: Country[] = [
         },
         population: 144104080,
         gini: {
-            "2018": 37.5,
+            2018: 37.5,
         },
         tld: [".ru", ".su", ".рф"],
         unMember: true,
@@ -16515,7 +16515,7 @@ export const countries: Country[] = [
         },
         population: 4994724,
         gini: {
-            "2017": 31.4,
+            2017: 31.4,
         },
         tld: [".ie"],
         unMember: true,
@@ -16699,7 +16699,7 @@ export const countries: Country[] = [
         },
         population: 10110116,
         gini: {
-            "2005": 26.6,
+            2005: 26.6,
         },
         tld: [".az"],
         unMember: true,
@@ -16888,7 +16888,7 @@ export const countries: Country[] = [
         },
         population: 2961161,
         gini: {
-            "2004": 45.5,
+            2004: 45.5,
         },
         tld: [".jm"],
         unMember: true,
@@ -17025,7 +17025,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Coat_of_arms_of_Eswatini.svg",
         },
         cioc: "SWZ",
         independent: true,
@@ -17081,7 +17081,7 @@ export const countries: Country[] = [
         },
         population: 1160164,
         gini: {
-            "2016": 54.6,
+            2016: 54.6,
         },
         tld: [".sz"],
         unMember: true,
@@ -17265,7 +17265,7 @@ export const countries: Country[] = [
         },
         population: 2225728,
         gini: {
-            "2017": 38,
+            2017: 38,
         },
         tld: [".ga"],
         unMember: true,
@@ -17817,7 +17817,7 @@ export const countries: Country[] = [
         },
         population: 115021,
         gini: {
-            "2013": 40.1,
+            2013: 40.1,
         },
         tld: [".fm"],
         unMember: true,
@@ -18572,7 +18572,7 @@ export const countries: Country[] = [
         },
         population: 128932753,
         gini: {
-            "2018": 45.4,
+            2018: 45.4,
         },
         tld: [".mx"],
         unMember: true,
@@ -18756,7 +18756,7 @@ export const countries: Country[] = [
         },
         population: 212559409,
         gini: {
-            "2019": 53.4,
+            2019: 53.4,
         },
         tld: [".br"],
         unMember: true,
@@ -18945,7 +18945,7 @@ export const countries: Country[] = [
         },
         population: 10834,
         gini: {
-            "2012": 34.8,
+            2012: 34.8,
         },
         tld: [".nr"],
         unMember: true,
@@ -19129,7 +19129,7 @@ export const countries: Country[] = [
         },
         population: 83992953,
         gini: {
-            "2018": 42,
+            2018: 42,
         },
         tld: [".ir", "ایران."],
         unMember: true,
@@ -19309,7 +19309,7 @@ export const countries: Country[] = [
         },
         population: 32866268,
         gini: {
-            "2018": 51.3,
+            2018: 51.3,
         },
         tld: [".ao"],
         unMember: true,
@@ -19633,7 +19633,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/e/e3/Clunies-Ross_family_arms.svg",
         },
         cioc: "",
         independent: false,
@@ -19862,7 +19862,7 @@ export const countries: Country[] = [
         },
         population: 54409794,
         gini: {
-            "2017": 30.7,
+            2017: 30.7,
         },
         tld: [".mm"],
         unMember: true,
@@ -20046,7 +20046,7 @@ export const countries: Country[] = [
         },
         population: 102334403,
         gini: {
-            "2017": 31.5,
+            2017: 31.5,
         },
         tld: [".eg", ".مصر"],
         unMember: true,
@@ -20231,7 +20231,7 @@ export const countries: Country[] = [
         },
         population: 59554023,
         gini: {
-            "2017": 35.9,
+            2017: 35.9,
         },
         tld: [".it"],
         unMember: true,
@@ -20415,7 +20415,7 @@ export const countries: Country[] = [
         },
         population: 25687041,
         gini: {
-            "2014": 34.4,
+            2014: 34.4,
         },
         tld: [".au"],
         unMember: true,
@@ -20613,7 +20613,7 @@ export const countries: Country[] = [
         },
         population: 2351625,
         gini: {
-            "2015": 53.3,
+            2015: 53.3,
         },
         tld: [".bw"],
         unMember: true,
@@ -20937,7 +20937,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Armoiries_R%C3%A9union.svg/500px-Armoiries_R%C3%A9union.svg.png",
         },
         cioc: "",
         independent: false,
@@ -21166,7 +21166,7 @@ export const countries: Country[] = [
         },
         population: 5057677,
         gini: {
-            "2016": 35.3,
+            2016: 35.3,
         },
         tld: [".lr"],
         unMember: true,
@@ -21350,7 +21350,7 @@ export const countries: Country[] = [
         },
         population: 10305564,
         gini: {
-            "2018": 33.5,
+            2018: 33.5,
         },
         tld: [".pt"],
         unMember: true,
@@ -21716,7 +21716,7 @@ export const countries: Country[] = [
         },
         population: 17500657,
         gini: {
-            "2003": 37.5,
+            2003: 37.5,
         },
         tld: [".sy", "سوريا."],
         unMember: true,
@@ -21900,7 +21900,7 @@ export const countries: Country[] = [
         },
         population: 5831404,
         gini: {
-            "2018": 28.2,
+            2018: 28.2,
         },
         tld: [".dk"],
         unMember: true,
@@ -22084,7 +22084,7 @@ export const countries: Country[] = [
         },
         population: 2837743,
         gini: {
-            "2017": 33.2,
+            2017: 33.2,
         },
         tld: [".al"],
         unMember: true,
@@ -22268,7 +22268,7 @@ export const countries: Country[] = [
         },
         population: 5458827,
         gini: {
-            "2018": 25,
+            2018: 25,
         },
         tld: [".sk"],
         unMember: true,
@@ -22636,7 +22636,7 @@ export const countries: Country[] = [
         },
         population: 18383956,
         gini: {
-            "2015": 57.1,
+            2015: 57.1,
         },
         tld: [".zm"],
         unMember: true,
@@ -22825,7 +22825,7 @@ export const countries: Country[] = [
         },
         population: 219161,
         gini: {
-            "2017": 56.3,
+            2017: 56.3,
         },
         tld: [".st"],
         unMember: true,
@@ -23195,7 +23195,7 @@ export const countries: Country[] = [
         },
         population: 16655799,
         gini: {
-            "2018": 28.1,
+            2018: 28.1,
         },
         tld: [".nl"],
         unMember: true,
@@ -23332,7 +23332,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/e/ea/Coat_of_arms_of_Samoa.svg",
         },
         cioc: "ASA",
         independent: false,
@@ -23591,7 +23591,7 @@ export const countries: Country[] = [
         },
         population: 11673029,
         gini: {
-            "2019": 41.6,
+            2019: 41.6,
         },
         tld: [".bo"],
         unMember: true,
@@ -23728,7 +23728,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/a/a5/Coat_of_arms_of_the_British_Indian_Ocean_Territory.svg",
         },
         cioc: "",
         independent: false,
@@ -23957,7 +23957,7 @@ export const countries: Country[] = [
         },
         population: 83240525,
         gini: {
-            "2016": 31.9,
+            2016: 31.9,
         },
         tld: [".de"],
         unMember: true,
@@ -24333,7 +24333,7 @@ export const countries: Country[] = [
         },
         population: 1331057,
         gini: {
-            "2018": 30.3,
+            2018: 30.3,
         },
         tld: [".ee"],
         unMember: true,
@@ -24517,7 +24517,7 @@ export const countries: Country[] = [
         },
         population: 20250834,
         gini: {
-            "2009": 33,
+            2009: 33,
         },
         tld: [".ml"],
         unMember: true,
@@ -24836,7 +24836,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/9/9c/Coat_of_arms_of_the_Democratic_Republic_of_the_Congo_%28black_spear%29.svg",
         },
         cioc: "COD",
         independent: true,
@@ -24903,7 +24903,7 @@ export const countries: Country[] = [
         },
         population: 108407721,
         gini: {
-            "2012": 42.1,
+            2012: 42.1,
         },
         tld: [".cd"],
         unMember: true,
@@ -25087,7 +25087,7 @@ export const countries: Country[] = [
         },
         population: 9749763,
         gini: {
-            "2018": 29.6,
+            2018: 29.6,
         },
         tld: [".hu"],
         unMember: true,
@@ -25453,7 +25453,7 @@ export const countries: Country[] = [
         },
         population: 621718,
         gini: {
-            "2016": 38.5,
+            2016: 38.5,
         },
         tld: [".me"],
         unMember: true,
@@ -25642,7 +25642,7 @@ export const countries: Country[] = [
         },
         population: 7132530,
         gini: {
-            "2019": 45.7,
+            2019: 45.7,
         },
         tld: [".py"],
         unMember: true,
@@ -25836,7 +25836,7 @@ export const countries: Country[] = [
         },
         population: 32971846,
         gini: {
-            "2019": 41.5,
+            2019: 41.5,
         },
         tld: [".pe"],
         unMember: true,
@@ -26025,7 +26025,7 @@ export const countries: Country[] = [
         },
         population: 11890781,
         gini: {
-            "2013": 38.6,
+            2013: 38.6,
         },
         tld: [".bi"],
         unMember: true,
@@ -26209,7 +26209,7 @@ export const countries: Country[] = [
         },
         population: 7275556,
         gini: {
-            "2018": 38.8,
+            2018: 38.8,
         },
         tld: [".la"],
         unMember: true,
@@ -26393,7 +26393,7 @@ export const countries: Country[] = [
         },
         population: 11193729,
         gini: {
-            "2016": 44.1,
+            2016: 44.1,
         },
         tld: [".ss"],
         unMember: true,
@@ -26765,7 +26765,7 @@ export const countries: Country[] = [
         },
         population: 2077132,
         gini: {
-            "2018": 33,
+            2018: 33,
         },
         tld: [".mk"],
         unMember: true,
@@ -26954,7 +26954,7 @@ export const countries: Country[] = [
         },
         population: 36910558,
         gini: {
-            "2013": 39.5,
+            2013: 39.5,
         },
         tld: [".ma", "المغرب."],
         unMember: true,
@@ -27143,7 +27143,7 @@ export const countries: Country[] = [
         },
         population: 6825442,
         gini: {
-            "2011": 31.8,
+            2011: 31.8,
         },
         tld: [".lb"],
         unMember: true,
@@ -27509,7 +27509,7 @@ export const countries: Country[] = [
         },
         population: 13132792,
         gini: {
-            "2012": 33.7,
+            2012: 33.7,
         },
         tld: [".gn"],
         unMember: true,
@@ -27693,7 +27693,7 @@ export const countries: Country[] = [
         },
         population: 6624554,
         gini: {
-            "2014": 46.2,
+            2014: 46.2,
         },
         tld: [".ni"],
         unMember: true,
@@ -28064,7 +28064,7 @@ export const countries: Country[] = [
         },
         population: 21919000,
         gini: {
-            "2016": 39.3,
+            2016: 39.3,
         },
         tld: [".lk", ".இலங்கை", ".ලංකා"],
         unMember: true,
@@ -28201,7 +28201,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/c/c5/Coat_of_arms_of_the_Commonwealth_of_Australia.svg",
         },
         cioc: "",
         independent: false,
@@ -28450,7 +28450,7 @@ export const countries: Country[] = [
         },
         population: 1402112000,
         gini: {
-            "2016": 38.5,
+            2016: 38.5,
         },
         tld: [".cn", ".中国", ".中國", ".公司", ".网络"],
         unMember: true,
@@ -28999,7 +28999,7 @@ export const countries: Country[] = [
         },
         population: 44134693,
         gini: {
-            "2019": 26.6,
+            2019: 26.6,
         },
         tld: [".ua", ".укр"],
         unMember: true,
@@ -29233,7 +29233,7 @@ export const countries: Country[] = [
         },
         population: 59308690,
         gini: {
-            "2014": 63,
+            2014: 63,
         },
         tld: [".za"],
         unMember: true,
@@ -29609,7 +29609,7 @@ export const countries: Country[] = [
         },
         population: 98462,
         gini: {
-            "2018": 32.1,
+            2018: 32.1,
         },
         tld: [".sc"],
         unMember: true,
@@ -29793,7 +29793,7 @@ export const countries: Country[] = [
         },
         population: 10847904,
         gini: {
-            "2019": 41.9,
+            2019: 41.9,
         },
         tld: [".do"],
         unMember: true,
@@ -29977,7 +29977,7 @@ export const countries: Country[] = [
         },
         population: 273523621,
         gini: {
-            "2019": 38.2,
+            2019: 38.2,
         },
         tld: [".id"],
         unMember: true,
@@ -30166,7 +30166,7 @@ export const countries: Country[] = [
         },
         population: 19129955,
         gini: {
-            "2016": 44.7,
+            2016: 44.7,
         },
         tld: [".mw"],
         unMember: true,
@@ -30355,7 +30355,7 @@ export const countries: Country[] = [
         },
         population: 26545864,
         gini: {
-            "2014": 46.6,
+            2014: 46.6,
         },
         tld: [".cm"],
         unMember: true,
@@ -30544,7 +30544,7 @@ export const countries: Country[] = [
         },
         population: 27691019,
         gini: {
-            "2012": 42.6,
+            2012: 42.6,
         },
         tld: [".mg"],
         unMember: true,
@@ -30737,7 +30737,7 @@ export const countries: Country[] = [
         },
         population: 119446,
         gini: {
-            "2006": 37,
+            2006: 37,
         },
         tld: [".ki"],
         unMember: true,
@@ -30931,7 +30931,7 @@ export const countries: Country[] = [
         },
         population: 896444,
         gini: {
-            "2013": 36.7,
+            2013: 36.7,
         },
         tld: [".fj"],
         unMember: true,
@@ -31302,7 +31302,7 @@ export const countries: Country[] = [
         },
         population: 220892331,
         gini: {
-            "2018": 31.6,
+            2018: 31.6,
         },
         tld: [".pk"],
         unMember: true,
@@ -31677,7 +31677,7 @@ export const countries: Country[] = [
         },
         population: 586634,
         gini: {
-            "1999": 57.9,
+            1999: 57.9,
         },
         tld: [".sr"],
         unMember: true,
@@ -31874,7 +31874,7 @@ export const countries: Country[] = [
         },
         population: 988002,
         gini: {
-            "2017": 41.6,
+            2017: 41.6,
         },
         tld: [".dj"],
         unMember: true,
@@ -32058,7 +32058,7 @@ export const countries: Country[] = [
         },
         population: 2416664,
         gini: {
-            "2015": 35.9,
+            2015: 35.9,
         },
         tld: [".gm"],
         unMember: true,
@@ -32242,7 +32242,7 @@ export const countries: Country[] = [
         },
         population: 3278292,
         gini: {
-            "2018": 32.7,
+            2018: 32.7,
         },
         tld: [".mn"],
         unMember: true,
@@ -32496,7 +32496,7 @@ export const countries: Country[] = [
         },
         population: 14862927,
         gini: {
-            "2019": 50.3,
+            2019: 50.3,
         },
         tld: [".zw"],
         unMember: true,
@@ -32680,7 +32680,7 @@ export const countries: Country[] = [
         },
         population: 366425,
         gini: {
-            "2017": 26.1,
+            2017: 26.1,
         },
         tld: [".is"],
         unMember: true,
@@ -32869,7 +32869,7 @@ export const countries: Country[] = [
         },
         population: 11402533,
         gini: {
-            "2012": 41.1,
+            2012: 41.1,
         },
         tld: [".ht"],
         unMember: true,
@@ -33053,7 +33053,7 @@ export const countries: Country[] = [
         },
         population: 19286123,
         gini: {
-            "2018": 35.8,
+            2018: 35.8,
         },
         tld: [".ro"],
         unMember: true,
@@ -33237,7 +33237,7 @@ export const countries: Country[] = [
         },
         population: 5094114,
         gini: {
-            "2019": 48.2,
+            2019: 48.2,
         },
         tld: [".cr"],
         unMember: true,
@@ -33421,7 +33421,7 @@ export const countries: Country[] = [
         },
         population: 4047200,
         gini: {
-            "2018": 29.7,
+            2018: 29.7,
         },
         tld: [".hr"],
         unMember: true,
@@ -33605,7 +33605,7 @@ export const countries: Country[] = [
         },
         population: 97338583,
         gini: {
-            "2018": 35.7,
+            2018: 35.7,
         },
         tld: [".vn"],
         unMember: true,
@@ -33789,7 +33789,7 @@ export const countries: Country[] = [
         },
         population: 51780579,
         gini: {
-            "2016": 31.4,
+            2016: 31.4,
         },
         tld: [".kr", ".한국"],
         unMember: true,
@@ -34165,7 +34165,7 @@ export const countries: Country[] = [
         },
         population: 38005238,
         gini: {
-            "2017": 33.3,
+            2017: 33.3,
         },
         tld: [".ca"],
         unMember: true,
@@ -34666,7 +34666,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/3/36/Coat_of_arms_of_the_Commonwealth_of_Puerto_Rico.svg",
         },
         cioc: "PUR",
         independent: false,
@@ -34909,7 +34909,7 @@ export const countries: Country[] = [
         },
         population: 11792,
         gini: {
-            "2010": 39.1,
+            2010: 39.1,
         },
         tld: [".tv"],
         unMember: true,
@@ -35233,7 +35233,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/a/a6/Coat_of_arms_of_Saint_Martin.svg",
         },
         cioc: "",
         independent: false,
@@ -35472,7 +35472,7 @@ export const countries: Country[] = [
         },
         population: 1265740,
         gini: {
-            "2017": 36.8,
+            2017: 36.8,
         },
         tld: [".mu"],
         unMember: true,
@@ -35609,7 +35609,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/7/78/Coat_of_arms_of_South_Georgia_and_the_South_Sandwich_Islands.svg",
         },
         cioc: "",
         independent: false,
@@ -35848,7 +35848,7 @@ export const countries: Country[] = [
         },
         population: 8947027,
         gini: {
-            "2009": 41.9,
+            2009: 41.9,
         },
         tld: [".pg"],
         unMember: true,
@@ -36046,7 +36046,7 @@ export const countries: Country[] = [
         },
         population: 18754440,
         gini: {
-            "2018": 27.8,
+            2018: 27.8,
         },
         tld: [".kz", ".қаз"],
         unMember: true,
@@ -36235,7 +36235,7 @@ export const countries: Country[] = [
         },
         population: 32365998,
         gini: {
-            "2015": 41.1,
+            2015: 41.1,
         },
         tld: [".my"],
         unMember: true,
@@ -36424,7 +36424,7 @@ export const countries: Country[] = [
         },
         population: 45741000,
         gini: {
-            "2016": 42.8,
+            2016: 42.8,
         },
         tld: [".ug"],
         unMember: true,
@@ -36608,7 +36608,7 @@ export const countries: Country[] = [
         },
         population: 20903278,
         gini: {
-            "2014": 35.3,
+            2014: 35.3,
         },
         tld: [".bf"],
         unMember: true,
@@ -37358,7 +37358,7 @@ export const countries: Country[] = [
         },
         population: 540542,
         gini: {
-            "2016": 31.3,
+            2016: 31.3,
         },
         tld: [".mv"],
         unMember: true,
@@ -37542,7 +37542,7 @@ export const countries: Country[] = [
         },
         population: 29825968,
         gini: {
-            "2014": 36.7,
+            2014: 36.7,
         },
         tld: [".ye"],
         unMember: true,
@@ -37679,7 +37679,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/8/80/Seal_of_the_United_States_Virgin_Islands.svg",
         },
         cioc: "ISV",
         independent: false,
@@ -38654,7 +38654,7 @@ export const countries: Country[] = [
         },
         population: 4314768,
         gini: {
-            "2019": 49.8,
+            2019: 49.8,
         },
         tld: [".pa"],
         unMember: true,
@@ -38838,7 +38838,7 @@ export const countries: Country[] = [
         },
         population: 69799978,
         gini: {
-            "2019": 34.9,
+            2019: 34.9,
         },
         tld: [".th", ".ไทย"],
         unMember: true,
@@ -39022,7 +39022,7 @@ export const countries: Country[] = [
         },
         population: 10353442,
         gini: {
-            "2018": 30,
+            2018: 30,
         },
         tld: [".se"],
         unMember: true,
@@ -39206,7 +39206,7 @@ export const countries: Country[] = [
         },
         population: 44700000,
         gini: {
-            "2011": 27.6,
+            2011: 27.6,
         },
         tld: [".dz", "الجزائر."],
         unMember: true,
@@ -39390,7 +39390,7 @@ export const countries: Country[] = [
         },
         population: 31255435,
         gini: {
-            "2014": 54,
+            2014: 54,
         },
         tld: [".mz"],
         unMember: true,
@@ -39618,7 +39618,7 @@ export const countries: Country[] = [
         },
         population: 2540916,
         gini: {
-            "2015": 59.1,
+            2015: 59.1,
         },
         tld: [".na"],
         unMember: true,
@@ -39937,7 +39937,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/c/c0/Coat_of_arms_of_the_Governor_of_Svalbard.svg",
         },
         cioc: "",
         independent: false,
@@ -40349,7 +40349,7 @@ export const countries: Country[] = [
         },
         population: 9904608,
         gini: {
-            "2019": 48.2,
+            2019: 48.2,
         },
         tld: [".hn"],
         unMember: true,
@@ -40533,7 +40533,7 @@ export const countries: Country[] = [
         },
         population: 125836021,
         gini: {
-            "2013": 32.9,
+            2013: 32.9,
         },
         tld: [".jp", ".みんな"],
         unMember: true,
@@ -41044,7 +41044,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/5/5a/Wapen_van_Sint_Maarten.svg",
         },
         cioc: "",
         independent: false,
@@ -41288,7 +41288,7 @@ export const countries: Country[] = [
         },
         population: 9398861,
         gini: {
-            "2019": 25.3,
+            2019: 25.3,
         },
         tld: [".by"],
         unMember: true,
@@ -41664,7 +41664,7 @@ export const countries: Country[] = [
         },
         population: 3280815,
         gini: {
-            "2011": 33,
+            2011: 33,
         },
         tld: [".ba"],
         unMember: true,
@@ -42035,7 +42035,7 @@ export const countries: Country[] = [
         },
         population: 53771300,
         gini: {
-            "2015": 40.8,
+            2015: 40.8,
         },
         tld: [".ke"],
         unMember: true,
@@ -42546,7 +42546,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "",
-            svg: "",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Badge_of_Tokelau.svg",
         },
         cioc: "",
         independent: false,
@@ -42785,7 +42785,7 @@ export const countries: Country[] = [
         },
         population: 786559,
         gini: {
-            "1998": 45.1,
+            1998: 45.1,
         },
         tld: [".gy"],
         unMember: true,
@@ -42969,7 +42969,7 @@ export const countries: Country[] = [
         },
         population: 29136808,
         gini: {
-            "2010": 32.8,
+            2010: 32.8,
         },
         tld: [".np"],
         unMember: true,
@@ -43163,7 +43163,7 @@ export const countries: Country[] = [
         },
         population: 1380004385,
         gini: {
-            "2011": 35.7,
+            2011: 35.7,
         },
         tld: [".in"],
         unMember: true,
@@ -43347,7 +43347,7 @@ export const countries: Country[] = [
         },
         population: 1399491,
         gini: {
-            "1992": 40.3,
+            1992: 40.3,
         },
         tld: [".tt"],
         unMember: true,
@@ -43547,7 +43547,7 @@ export const countries: Country[] = [
         },
         population: 632275,
         gini: {
-            "2018": 35.4,
+            2018: 35.4,
         },
         tld: [".lu"],
         unMember: true,
@@ -43746,7 +43746,7 @@ export const countries: Country[] = [
         },
         population: 8654622,
         gini: {
-            "2018": 33.1,
+            2018: 33.1,
         },
         tld: [".ch"],
         unMember: true,
@@ -44118,7 +44118,7 @@ export const countries: Country[] = [
         },
         population: 40222503,
         gini: {
-            "2012": 29.5,
+            2012: 29.5,
         },
         tld: [".iq"],
         unMember: true,
@@ -44312,7 +44312,7 @@ export const countries: Country[] = [
         },
         population: 5379475,
         gini: {
-            "2018": 27.6,
+            2018: 27.6,
         },
         tld: [".no"],
         unMember: true,
@@ -44678,7 +44678,7 @@ export const countries: Country[] = [
         },
         population: 67215293,
         gini: {
-            "2017": 35.1,
+            2017: 35.1,
         },
         tld: [".uk"],
         unMember: true,
@@ -45057,7 +45057,7 @@ export const countries: Country[] = [
         },
         population: 47351567,
         gini: {
-            "2018": 34.7,
+            2018: 34.7,
         },
         tld: [".es"],
         unMember: true,
@@ -45241,7 +45241,7 @@ export const countries: Country[] = [
         },
         population: 6908224,
         gini: {
-            "2017": 36.2,
+            2017: 36.2,
         },
         tld: [".rs", ".срб"],
         unMember: true,
@@ -45425,7 +45425,7 @@ export const countries: Country[] = [
         },
         population: 2100126,
         gini: {
-            "2018": 24.6,
+            2018: 24.6,
         },
         tld: [".si"],
         unMember: true,
@@ -45609,7 +45609,7 @@ export const countries: Country[] = [
         },
         population: 2963234,
         gini: {
-            "2019": 29.9,
+            2019: 29.9,
         },
         tld: [".am"],
         unMember: true,
@@ -45793,7 +45793,7 @@ export const countries: Country[] = [
         },
         population: 24206636,
         gini: {
-            "2014": 34.3,
+            2014: 34.3,
         },
         tld: [".ne"],
         unMember: true,
@@ -46336,7 +46336,7 @@ export const countries: Country[] = [
         },
         population: 50882884,
         gini: {
-            "2019": 51.3,
+            2019: 51.3,
         },
         tld: [".co"],
         unMember: true,
@@ -46520,7 +46520,7 @@ export const countries: Country[] = [
         },
         population: 37950802,
         gini: {
-            "2018": 30.2,
+            2018: 30.2,
         },
         tld: [".pl"],
         unMember: true,
@@ -46704,7 +46704,7 @@ export const countries: Country[] = [
         },
         population: 84339067,
         gini: {
-            "2019": 41.9,
+            2019: 41.9,
         },
         tld: [".tr"],
         unMember: true,
@@ -47074,7 +47074,7 @@ export const countries: Country[] = [
         },
         population: 4649660,
         gini: {
-            "2014": 32.6,
+            2014: 32.6,
         },
         tld: [".mr"],
         unMember: true,
