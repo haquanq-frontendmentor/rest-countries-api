@@ -34,8 +34,8 @@ export const Header = () => {
   }, [theme]);
 
   useEffect(() => {
-    if (pathname != "/") {
-      const countryCode = getCountryCodeBySlug(pathname.slice(1));
+    if (pathname != "/rest-countries-api") {
+      const countryCode = getCountryCodeBySlug(pathname.replace("/rest-countries-api/", ""));
       const country = countries.find((v) => v.cca3 === countryCode);
       if (!country) return;
       setTitle(country.name.common);
