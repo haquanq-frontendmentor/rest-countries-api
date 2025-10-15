@@ -3,6 +3,7 @@ import MoveLeftIcon from "@/assets/images/move-left.svg?react";
 import { Button } from "@/components/common/Button";
 import { Definition } from "@/components/Definition";
 import { FlagHolder } from "@/components/FlagHolder";
+import { ROUTER_CONFIG } from "@/constants/routerConfig";
 import { countries } from "@/data";
 import type { Country } from "@/data.type";
 import { Container } from "@/layouts/Container";
@@ -104,7 +105,7 @@ export const CountryDetail = () => {
                 <li className="w-50" key={`neighbor-${neighbor.name.common}`}>
                   <Link
                     className="block rounded-md shadow-sm ring-0 ring-gray-950 transition-shadow hover:ring-2 dark:ring-white"
-                    to={`/${neighbor.name.common.toLowerCase().replaceAll(" ", "-")}`}
+                    to={`${ROUTER_CONFIG.BASE_PATH}/${neighbor.name.common.toLowerCase().replaceAll(" ", "-")}`}
                   >
                     <FlagHolder
                       className="aspect-video px-2 py-4"
