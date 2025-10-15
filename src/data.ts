@@ -5824,7 +5824,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/gw.png",
-            svg: "https://mainfacts.com/media/images/coats_of_arms/gw.svg",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/0/06/Emblem_of_Guinea-Bissau.svg",
         },
         cioc: "GBS",
         independent: true,
