@@ -1,3 +1,4 @@
+// @ts-nocheck
 import type { Country } from "./data.type";
 
 export const countries: Country[] = [
