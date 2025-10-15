@@ -118,15 +118,17 @@ export const CountryDetail = () => {
           </section>
         )}
 
-        <figure className="flex flex-col items-center">
-          <figcaption className="font-extra-bold mb-8 text-center text-2xl leading-8 text-gray-950 dark:text-white">
-            Coat of Arms
-          </figcaption>
-          <FlagHolder
-            className="aspect-video w-[min(100vw-3rem,40rem)] rounded-md shadow-sm"
-            src={country.coatOfArms.svg}
-          />
-        </figure>
+        {country.coatOfArms.svg && (
+          <figure className="flex flex-col items-center">
+            <figcaption className="font-extra-bold mb-8 text-center text-2xl leading-8 text-gray-950 dark:text-white">
+              Coat of Arms
+            </figcaption>
+            <FlagHolder
+              className="aspect-video w-[min(100vw-3rem,40rem)] rounded-md shadow-sm"
+              src={country.coatOfArms.svg}
+            />
+          </figure>
+        )}
       </div>
     </Container>
   );
