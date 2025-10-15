@@ -63,7 +63,7 @@ export const CountryItem = ({ country }: CountryItemProps) => {
       </div>
       <Link
         className="absolute inset-0 z-50 cursor-pointer rounded-[inherit]"
-        to={`/${getCountrySlugByCode(country.cca3)}`}
+        to={`${getCountrySlugByCode(country.cca3)}`}
       >
         <span className="sr-only">More about {country.name.common}</span>
       </Link>
