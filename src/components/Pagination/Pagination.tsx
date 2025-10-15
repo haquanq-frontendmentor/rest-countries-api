@@ -48,6 +48,7 @@ export const Pagination = ({ onPageChange, totalItems, pageSizes, onPageSizeChan
         setPage,
         firstPage: FIRST_PAGE,
         lastPage: LAST_PAGE,
+        pageSize,
         pageSizes,
         totalItems,
         setPageSize,

@@ -6,6 +6,7 @@ type PaginationContextData = {
     firstPage: number;
     lastPage: number;
     pageSizes: number[];
+    pageSize: number;
     setPageSize: (pageSize: number) => void;
     totalItems: number;
 };
