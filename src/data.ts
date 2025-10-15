@@ -25779,7 +25779,7 @@ export const countries: Country[] = [
         },
         coatOfArms: {
             png: "https://mainfacts.com/media/images/coats_of_arms/pe.png",
-            svg: "https://mainfacts.com/media/images/coats_of_arms/pe.svg",
+            svg: "https://upload.wikimedia.org/wikipedia/commons/c/cc/Escudo_nacional_del_Per%C3%BA.svg",
         },
         cioc: "PER",
         independent: true,
