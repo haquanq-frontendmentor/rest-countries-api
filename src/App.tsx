@@ -7,6 +7,7 @@ export const App = () => {
   return (
     <Routes>
       <Route
+        path="/rest-countries-api"
         element={
           <div className="min-h-screen bg-gray-50 dark:bg-blue-950">
             <Header />
